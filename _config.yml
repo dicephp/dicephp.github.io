@@ -36,16 +36,19 @@ locale: "en-GB"
 
 
 # Default author
-name: Vaibhav
+author:
+  name: "Vaibhav"
+  bio: "Teaches to Learn"
+  email: "vaibhav@onepercent.xyz"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
