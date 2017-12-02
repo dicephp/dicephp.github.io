@@ -25,7 +25,7 @@ git add .
 git commit -m "Update - $date_now"
 echo -e "\033[0;31m Returned: $?"
 
-origin_count = $(git remote | grep -i "^origin$" | wc -l | xargs)
+origin_count=$(git remote | grep -i "^origin$" | wc -l | xargs)
 
 if [ 1 -e $origin_count]; then
 	echo -e "\033[0;31m Origin remote already exists."
