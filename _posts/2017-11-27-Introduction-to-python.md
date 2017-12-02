@@ -1,29 +1,13 @@
 ---
 layout: single
-title:  "Welcome to Pythin"
+title:  "Welcome to Python"
 date:   2017-11-27 02:00:20 +0530
 categories: 
 toc: true
 author_profile: true
-sidebar:
-  nav: "python"
+# sidebar:
+#  nav: "python"
 ---
-## INtroducing Python
+## Introducing Python
 
-asd
-
-### 1
-
-1
-
-### 2
-
-2
-
-## Hello
-
-hi
-
-### what
-
-what
+Python is one of the most powerful languages around
