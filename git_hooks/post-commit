@@ -23,7 +23,6 @@ fi;
 
 git add . 
 git commit -m "Update - $date_now"
-echo -e "\033[0;31m Returned: $?"
 
 origin_count=$(git remote | grep -i "^origin$" | wc -l | xargs)
 
