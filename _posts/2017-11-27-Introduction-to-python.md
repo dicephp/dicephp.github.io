@@ -5,6 +5,7 @@ date:   2017-11-27 02:00:20 +0530
 categories: 
 toc: true
 author_profile: true
+permalink: "/intro-to-python/"
 # sidebar:
 #  nav: "python"
 ---
