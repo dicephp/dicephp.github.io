@@ -6,9 +6,10 @@ categories:
 toc: true
 author_profile: true
 permalink: "/intro-to-python/data-types/"
- sidebar:
+sidebar:
   nav: "python"
 ---
+
 ## Numbers
 
 There are two types of nubers in python - Integers and Floating point numbers (decimals).
