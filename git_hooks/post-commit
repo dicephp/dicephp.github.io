@@ -15,16 +15,25 @@ echo "========================================================="
 date_now=$(date "+%Y-%m-%d_%H-%M-%S")
 
 if [ -d .git ]; then
-  echo "Git repo already exists";
+  echo -e "\033[0;33m Git repo already exists";
 else
-  echo "Git repo does not exist. Trying to initialize one"
+  echo -e "\033[0;33m Git repo does not exist. Trying to initialize one"
   git init
 fi;
 
 git add . 
 git commit -m "Update - $date_now"
-echo "\033[0;31m Returned: $?"
-git remote add origin git@github.com:vaibhav-kaushal/site.programming.onepercent.xyz.git
+echo -e "\033[0;31m Returned: $?"
+
+origin_count = $(git remote | grep -i "^origin$" | wc -l | xargs)
+
+if [ 1 -e $origin_count]
+	echo -e "\033[0;31m Origin remote already exists."
+else
+	echo -e "\033[0;31m Origin remote does not exist. Trying to create remote."
+	git remote add origin git@github.com:vaibhav-kaushal/site.programming.onepercent.xyz.git
+fi
+
 git push -u origin master
 
 echo "PUSHED! Site should be updated in a few seconds"
