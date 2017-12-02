@@ -4,10 +4,13 @@ title:  "Data Types in Python"
 date:   2017-12-02 04:00:20 +0530
 categories: 
 toc: true
+toc_label: "Data types!"
+toc_icon: "gear"
 author_profile: true
 permalink: "/intro-to-python/data-types/"
 sidebar:
   nav: "python"
+
 ---
 
 ## Numbers
