@@ -1,8 +1,8 @@
 #! /bin/bash
 
 # Echo messages to console
-echo -e "\033[0;31m BUILDING THE SITE in '../site.programming.onepercent.xyz'"
-echo -e "\033[0;31m ========================================================="
+echo -e "\033[0;34m BUILDING THE SITE in '../site.programming.onepercent.xyz'"
+echo -e "\033[0;34m ========================================================="
 echo -e "\033[0;30m "
 
 # Build the site
@@ -15,8 +15,8 @@ rm -rf git_hooks
 echo "programming.onepercent.xyz" > CNAME
 
 # Add a Git remote if it is not there
-echo -e "\033[0;31m TRYING TO PUSH SITE TO SITE REPO"
-echo -e "\033[0;31m ========================================================="
+echo -e "\033[0;34m TRYING TO PUSH SITE TO SITE REPO"
+echo -e "\033[0;34m ========================================================="
 date_now=$(date "+%Y-%m-%d_%H-%M-%S")
 
 # Print whether git repo exists or not
@@ -34,10 +34,11 @@ echo -e "\033[0;30m "
 git add . 
 git commit -m "Update - $date_now"
 
+# Does a remote named 'origin' exist?
 origin_count=$(git remote | grep -i "^origin$" | wc -l | xargs)
 
 if [ 1 -eq $origin_count ]; then
-	echo -e "\033[0;31m Origin remote already exists."
+	echo -e "\033[0;34m Origin remote already exists."
 else
 	echo -e "\033[0;31m Origin remote does not exist. Trying to create remote."
 	git remote add origin git@github.com:vaibhav-kaushal/site.programming.onepercent.xyz.git
@@ -48,6 +49,6 @@ echo -e "\033[0;30m "
 # Attempting to push
 git push -u origin master
 
-echo -e "\033[0;31m PUSHED! Site should be updated in a few seconds"
-echo -e "\033[0;31m ========================================================="
+echo -e "\033[0;34m PUSHED! Site should be updated in a few seconds"
+echo -e "\033[0;34m ========================================================="
 echo -e "\033[0;30m "
