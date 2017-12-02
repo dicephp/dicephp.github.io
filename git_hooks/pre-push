@@ -6,7 +6,7 @@ echo -e "\033[0;31m ========================================================="
 echo -e "\033[0;30m "
 
 # Build the site
-jekyll build -d ../site.programming.onepercent.xyz
+bundle exec jekyll build -d ../site.programming.onepercent.xyz
 
 # Go to the generated folder
 cd ../site.programming.onepercent.xyz
