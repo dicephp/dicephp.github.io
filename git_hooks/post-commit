@@ -15,7 +15,7 @@ echo "========================================================="
 date_now=$(date "+%Y-%m-%d_%H-%M-%S")
 git init
 git add . 
-git commit "Update - $date_now"
+git commit -m "Update - $date_now"
 git remote add origin git@github.com:vaibhav-kaushal/site.programming.onepercent.xyz.git
 git push -u origin master
 
