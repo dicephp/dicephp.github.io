@@ -23,6 +23,7 @@ fi;
 
 echo -e "\033[0;30m "
 
+# Add all files and commit
 git add . 
 git commit -m "Update - $date_now"
 
