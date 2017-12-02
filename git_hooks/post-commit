@@ -25,6 +25,8 @@ git add .
 git commit -m "Update - $date_now"
 
 origin_count=$(git remote | grep -i "^origin$" | wc -l | xargs)
+echo "ORIGIN COUNT: $origin_count"
+echo $(git remote | grep -i "^origin$" | wc -l | xargs)
 
 if [ 1 -e $origin_count]; then
 	echo -e "\033[0;31m Origin remote already exists."
@@ -37,3 +39,4 @@ git push -u origin master
 
 echo "PUSHED! Site should be updated in a few seconds"
 echo "========================================================="
+echo ""
