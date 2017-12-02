@@ -31,6 +31,7 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
 
+# ### REMOTE THEME TO BE USED ###
 # theme: minimal-mistakes-jekyll
 remote_theme: "mmistakes/minimal-mistakes"
 
