@@ -33,6 +33,7 @@ theme: minimal-mistakes-jekyll
 paginate: 5
 minimal_mistakes_skin: "dirt"
 locale: "en-GB"
+encoding: utf-8
 
 
 # Default author
