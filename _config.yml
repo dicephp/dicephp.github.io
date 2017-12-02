@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Learn about the top 10 in one go!
 # baseurl: "/top-10" # the subpath of your site, e.g. /blog
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://vaibhavkaushal.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://programming.onepercent.xyz" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jockey0109
 github_username:  vaibhav-kaushal
 
