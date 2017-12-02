@@ -1,8 +1,8 @@
 #! /bin/bash
 
 # Build the site
-echo "BUILDING THE SITE in '../site.programming.onepercent.xyz'"
-echo "========================================================="
+echo "\033[0;30m BUILDING THE SITE in '../site.programming.onepercent.xyz'"
+echo "\033[0;30m ========================================================="
 jekyll build -d ../site.programming.onepercent.xyz
 
 # Go to the generated folder
@@ -10,8 +10,8 @@ cd ../site.programming.onepercent.xyz
 rm -rf git_hooks
 
 # Add a Git remote if it is not there
-echo "TRYING TO PUSH SITE TO SITE REPO"
-echo "========================================================="
+echo "\033[0;30m TRYING TO PUSH SITE TO SITE REPO"
+echo "\033[0;30m ========================================================="
 date_now=$(date "+%Y-%m-%d_%H-%M-%S")
 
 if [ -d .git ]; then
@@ -25,8 +25,9 @@ git add .
 git commit -m "Update - $date_now"
 
 origin_count=$(git remote | grep -i "^origin$" | wc -l | xargs)
-echo "ORIGIN COUNT: $origin_count"
-echo $(git remote | grep -i "^origin$" | wc -l | xargs)
+
+# echo "ORIGIN COUNT: $origin_count"
+# echo $(git remote | grep -i "^origin$" | wc -l | xargs)
 
 if [ 1 -eq $origin_count ]; then
 	echo -e "\033[0;31m Origin remote already exists."
@@ -37,6 +38,6 @@ fi
 
 git push -u origin master
 
-echo "PUSHED! Site should be updated in a few seconds"
-echo "========================================================="
-echo ""
+echo "\033[0;30m PUSHED! Site should be updated in a few seconds"
+echo "\033[0;30m ========================================================="
+echo -e "\033[0;30m "
