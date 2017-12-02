@@ -28,7 +28,7 @@ origin_count=$(git remote | grep -i "^origin$" | wc -l | xargs)
 echo "ORIGIN COUNT: $origin_count"
 echo $(git remote | grep -i "^origin$" | wc -l | xargs)
 
-if [ 1 -e $origin_count ]; then
+if [ 1 -eq $origin_count ]; then
 	echo -e "\033[0;31m Origin remote already exists."
 else
 	echo -e "\033[0;31m Origin remote does not exist. Trying to create remote."
