@@ -41,6 +41,7 @@ fi
 
 echo -e "\033[0;30m "
 
+# Attempting to push
 git push -u origin master
 
 echo "\033[0;31m PUSHED! Site should be updated in a few seconds"
