@@ -29,7 +29,11 @@ markdown: kramdown
 # theme: minima
 plugins:
   - jekyll-feed
-theme: minimal-mistakes-jekyll
+  - jekyll-remote-theme
+
+# theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes"
+
 paginate: 5
 minimal_mistakes_skin: "dirt"
 locale: "en-GB"
