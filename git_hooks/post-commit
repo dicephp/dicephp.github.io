@@ -13,7 +13,14 @@ rm -rf git_hooks
 echo "TRYING TO PUSH SITE TO SITE REPO"
 echo "========================================================="
 date_now=$(date "+%Y-%m-%d_%H-%M-%S")
-git init
+
+if [ -d .git ]; then
+  echo "Git repo already exists";
+else
+  echo "Git repo does not exist. Trying to initialize one"
+  git init
+fi;
+
 git add . 
 git commit -m "Update - $date_now"
 echo "\033[0;31m Returned: $?"
